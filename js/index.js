@@ -14,16 +14,16 @@ $(document).ready(function () {
     })
 });
 // 导航栏菜单切换效果
-var nav_color = document.querySelector(".font-color");
-var nav_lis = nav_color.children;
-for (var i = 0; i < nav_lis.length; i++) {
-    nav_lis[i].onmouseover = function () {
-        for (var i = 0; i < nav_lis.length; i++) {
-            nav_lis[i].classList.remove("active")
-        }
-        this.classList.add("active")
-    }
-}
+$(".font-color li").hover(function () {
+    $(this).css({'background-color':'#2562CC'}).find('a').css({"color":"#fff"})
+},function () {
+    $(this).css({'background-color':''})
+})
+$(".font-color li").click(function(event) {
+    $(".font-color li").removeClass('active');
+    $(this).addClass('active');
+});
+
 // var qyfl = document.getElementById("qyfl");
 // var pc_fu = document.querySelectorAll(".pc_fu");
 // var move_block = document.querySelectorAll(".move_block");
