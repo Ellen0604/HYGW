@@ -929,48 +929,50 @@
 	document.getElementById('index_bg_height').style.height = window.innerHeight - 127 + 'px';
 	$(function () {
 		// 广告碰壁
-		console.log($(window).height());
-		// $("#wall_box").height($(window).height()-66);
-		//获取元素
-		// var $wrap = $("#wall_box");
-		var $inner = $("#adv_index_btn");
-		var H = $(window).height()-66;
-		var W = $(window).width();
+		function advertising(){
+			//获取元素
+			var $inner = $("#adv_index_btn");
+			function run(){
+				var H = $(window).height()-66;
+				var W = $(window).width();
+				//垂直方向移动的速度
+				var vY = 1;
+				//水平方向移动的速度
+				var vX = 1;
 
-		//垂直方向移动的速度
-		var vY = 1;
-		//水平方向移动的速度
-		var vX = 1;
+				//inner的垂直方向的移动值
+				var innerT = 0;
+				//inner的水平方向的移动值
+				var innerL = 0;
+				return setInterval(function(){
+					if (innerT <0 || innerT + $inner.outerHeight() > H) {
+						vY = -vY;
+					}
+					if (innerL <0 || innerL + $inner.outerWidth() > W) {
+						vX = -vX;
+					}
+					innerT+=vY;
+					innerL+=vX;
+					// console.log(innerT,innerL)
+					$inner.css({
+						"top": innerT + "px",
+						"left": innerL + "px"
+					});
+				},5);
+			}
+			var timer = run();
 
-		//inner的垂直方向的移动值
-		var innerT = 0;
-		//inner的水平方向的移动值
-		var innerL = 0;
-
-		function run(){
-			return setInterval(function(){
-				if (innerT <0 || innerT + $inner.outerHeight() > H) {
-					vY = -vY;
-				}
-				if (innerL <0 || innerL + $inner.outerWidth() > W) {
-					vX = -vX;
-				}
-				innerT+=vY;
-				innerL+=vX;
-				// console.log(innerT,innerL)
-				$inner.css({
-					"top": innerT + "px",
-					"left": innerL + "px"
-				});
-			},5);
+			$inner.hover(function() {
+				window.clearInterval(timer);
+			}, function() {
+				timer = run();
+			});
+			$(window).resize(function(){
+				window.clearInterval(timer);
+				timer = run();
+			})
 		}
-		var timer = run();
-
-		$inner.hover(function() {
-			window.clearInterval(timer);
-		}, function() {
-			timer = run();
-		});
+		advertising();
 
 		// 返回顶部
 		$(".toHeader").click(function () {
