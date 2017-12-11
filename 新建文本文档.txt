@@ -1,0 +1,106 @@
+一.index.html
+
+73行放出来
+
+
+二.index.css
+
+	698和721 
+		.tu1_center a 替换为 .adv-index-btn
+
+	698-718  修改为
+
+		.adv-index-btn {
+    			display: block;
+    			width: 480px;
+    			height: 70px;
+    			line-height: 70px;
+    			text-align: center;
+    			border: 0;
+    			background: #e03337;
+    			border-radius: 10px;
+    			box-shadow: 2px 6px 2px #8e1114;
+    			color: #fff;
+    			text-decoration: none;
+    			margin: auto;
+    			font-size: 20px;
+    			font-family: "微软雅黑";
+   			position: fixed;
+    			bottom: 0;
+    			left: 0;
+    			right: 0;
+    			top: 0;
+    			z-index: 999;
+		}
+	
+	730
+	.header-bottom ul  width: 1120px改为width: 1200px;
+
+三.aboutUs.html ContactUs.html joinUs.html new.html newsDetail.html
+
+    //导航筋斗云
+    $('.navbar-nav>li').each(function () {
+        $(this).hover(function () {
+            $(this).css({"color":'#fff','background-color':'#2562CC'}).find('a').css({"color":"#fff"})
+        },function () {
+            $(this).css({'background-color':''})
+        })
+    });
+ 
+四.bootstrap.css
+
+	4522   background-color: #2562CC;
+
+五.ContactUs.html 
+
+	21-23 插入
+
+	.footer img {
+    		width: auto;
+	}
+
+六。所有页面导航
+
+	index。html为
+
+	<li><a href="#index">首页<span class="sr-only">(current)</span></a></li>
+	<li class="active"><a href="#fuwu">寰宇服务</a></li>
+	<li><a href="#tuandui">寰宇团队</a></li>
+	<li><a href="#kefu">寰宇客户</a></li>
+	<li><a href="news.html">寰宇资讯</a></li>
+	<li><a href="aboutUs.html">关于寰宇</a></li>
+
+	其余页面为   注意 class="active"
+
+	<li><a href="index.html#index">首页<span class="sr-only">(current)</span></a></li>
+	<li><a href="index.html#fuwu">寰宇服务</a></li>
+	<li><a href="index.html#tuandui">寰宇团队</a></li>
+	<li><a href="index.html#kefu">寰宇客户</a></li>
+	<li class="active"><a href="news.html">寰宇资讯</a></li>
+	<li><a href="aboutUs.html">关于寰宇</a></li>
+
+七。aboutUs.css
+
+	130后面插入
+
+	.aboutUslist li :hover{
+    		color: #2562CC;
+	}
+
+	151修改
+
+	.aboutmainsize {
+   		min-height: 800px;
+   	 	width: 1000px;
+    		margin: 0 auto
+	}
+
+	所有#e43b40 改为#2562CC
+
+八。news.html
+
+	25行插入
+
+	a:hover {
+     		color: #2562CC
+	}

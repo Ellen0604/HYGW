@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>关于我们</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="css/aboutUs.css"/>
+    <!-- Bootstrap的css样式-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!--动画插件-->
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .text-style .sure-cancel{
+            margin-top: 45px;
+        }
+        .media-right{
+            vertical-align: middle;
+            white-space:nowrap; 
+        }
+        a:hover {
+            color: #2562CC
+        }
+    </style>
+</head>
+
+<body>
+<!--遮罩层-->
+<div class="mark"></div>
+<!--弹窗样式-->
+<div class="alert_boxs alert_box" id="alert_box">
+    <div class="alt_top">
+        <div class="margin_box">
+            <span class="alt_logo"></span>
+            <span class="alt_mess" id="alt_mess"></span>
+        </div>
+    </div>
+    <div class="alt_bottom"><span class="alert_sure" id="alert_sure">确认</span></div>
+</div>
+<div class="alert_boxs cancel_box" id="cancel_box">
+    <div class="alt_top">
+        <span class="alt_logo"></span>
+        <span class="alt_mess">是否确定退出登录？</span>
+    </div>
+    <div class="alt_bottom">
+        <span class="alert_cancel" id="alert_cancel">取消</span>
+        <span class="alert_sure" id="cancel_sure">确认</span>
+    </div>
+</div>
+<!--通用导航开始-->
+<nav class="navbar navbar-default aboutUs_navbar navbar-fixed-top nav_bianse">
+    <div class="container-fluid top_css">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" id="collapse" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img class="zhaodazhuang_log" alt="zhaodazhuang" src="img1/logo.png">
+                <!-- <img class="zhaodazhuang_log" alt="zhaodazhuang" src="img/logo.png"> -->
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-example" id="navbar">
+            <!-- <ul class="nav navbar-nav font-color">
+                <li><a href="index.html#index">首页<span class="sr-only">(current)</span></a></li>
+                <li><a href="index.html#fuwu">寰宇服务</a></li>
+                <li><a href="index.html#tuandui">寰宇团队</a></li>
+                <li><a href="index.html#kefu">寰宇客户</a></li>
+                <li class="active"><a href="news.html">寰宇资讯</a></li>
+                <li><a href="aboutUs.html">关于寰宇</a></li>
+            </ul> -->
+            <ul class="nav navbar-nav font-color">
+                <li><a href="index.html#index">首页<span class="sr-only">(current)</span></a></li>
+                <li><a href="index.html#fuwu">XXXX</a></li>
+                <li><a href="index.html#tuandui">XXXX</a></li>
+                <li><a href="index.html#kefu">XXXX</a></li>
+                <li class="active"><a href="news.html">XXXX</a></li>
+                <li><a href="aboutUs.html">XXXX</a></li>
+            </ul>
+            <div class="log_zuce_but" id="log_zuce_but">
+                <button type="button" class="btn btn-default navbar-btn navbar-right btn-danger zuce" id="zuce_da_bit">
+                    注册
+                </button>
+                <button type="button" class="btn btn-default navbar-btn navbar-right login" id="lenglu_da_bit">登录
+                </button>
+            </div>
+            <span class="name-wrap navbar-right" id="name_wrap" style="display: none">
+						<a href="#" class="suer_name" id="suer_name" onclick="enter_UserCenter()"></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+						<a href="javascript:;" class="exitlogin" onclick="exit()">退出</a>
+			</span>
+            <p class="navbar_img navbar-right">
+                <span class="fuqin">
+                <img src="img/weixin.png" alt="" class="weixin_log">
+                <img src="img/wechat_code.jpg" alt="" class="hove_weixin">
+                </span>
+                &nbsp;
+                <span class="navbar_img2"><img src="img/ico_phone1.png" alt="" class="iphone_log">&nbsp;<span
+                        class="iphone_number">400-654-9558</span></span>
+            </p>
+
+        </div>
+    </div>
+</nav>
+<!--导航结束-->
+
+<!--登录注册框-->
+<div class="container" id="login_hide">
+    <div class="my-box loginregbox animated bounceInDown">
+        <ul class="loginz_bit">
+            <li class="active-btn">登录</li>
+            <li>注册</li>
+        </ul>
+        <!--登录内容开始-->
+        <form class="loginform" id="loginForm">
+            <div class="login-text text-style" id="login">
+                <label class="log_top">
+                    <span>手机号</span>
+                    <input name="userphone" id="userphone" type="tel" maxlength="11" placeholder="请输入手机号码"/>
+                    <div id="userinfo" class="info"></div>
+                </label>
+                <label>
+                    <span>密码</span>
+                    <span class="iepaww">请填写您的登录密码</span>
+                    <input name="login_pass" id="password" type="password" placeholder="请输入密码"/>
+                    <div id="pwdinfo" class="info"></div>
+                </label>
+                <div class="buttongroup1 clearfix">
+                    <a href="javascript:;" id="loginForm2" class="sure-btn">确认登录</a>
+                    <a href="javascript:;" id="cancel" class="cancel">取消</a>
+                    <a href="#" class="forget-btn" id="forget-btn">忘记密码？</a>
+                </div>
+            </div>
+        </form>
+        <!--登录内容结束-->
+        <!--注册内容开始-->
+        <!--注册内容开始-->
+        <form class="regform" id="regForm">
+            <div class="login-text text-style" style="display: none;" id="zuce">
+                <label>
+                    <span>手机号</span><input id="regtel" maxlength="11" class="phone" name="reg_iphone" type="tel"
+                                           placeholder="请输入手机号码"/>
+                    <div id="regtelinfo" class="info zhuzhi"></div>
+                </label>
+                <label class="yzm">
+                    <span>验证码</span>
+                    <div class="yzmgroup clearfix">
+                        <input type="text" id="regverifyCode" name="yan_zheng" class="yzm_input" placeholder="请输入验证码"/>
+                        <button type="button" class="yzm_btn getcode" id="btn1" name="btn1">获取验证码</button>
+                        <div id="regcodeinfo" class="info"></div>
+                    </div>
+                </label>
+                <label>
+                    <span>密码</span>
+                    <span class="iepaww">请填写您的登录密码</span>
+                    <input name="reg_password1" id="regpwd" type="password" placeholder="请至少输入6位密码"/>
+                    <div id="regpwdinfo" class="info"></div>
+                </label>
+                <label>
+                    <span>密码</span>
+                    <span class="iepaww">请再次确认你的密码</span>
+                    <input name="reg_password2" id="regpwd2" type="password" placeholder="请输入6-16位数字或英文新密码"/>
+                    <div id="regpwdinfo2" class="info"></div>
+                </label>
+
+                <div class="buttongroup clearfix">
+                    <input class="sure-btn" type="button" value="确认注册" id="confirmreg">
+                    <a class="sure-cancel" id="res-can" >取消</a>
+                </div>
+            </div>
+        </form>
+        <!--注册内容结束-->
+    </div>
+    <!--忘记密码-->
+    <div id="forget" class="my-box forget">
+        <p><i id="forget-back" class="iconfont"></i>忘记密码</p>
+        <span class="close_forget"></span>
+        <form class="forgetfrom" id="forgetfrom">
+            <div class="text-style">
+                <label>
+                    <span>手机号</span><input id="forgettel" name="forget_iphone" maxlength="11" type="tel" placeholder="请输入手机号码"/>
+                    <div id="fortelinfo" class="info"></div>
+                </label>
+                <label class="yzm">
+                    <span>验证码</span>
+                    <div class="yzmgroup clearfix">
+                        <input type="text" name="" id="forgetverifyCode" class="yzm_input" placeholder="请输入验证码"
+                               name="forgetverifyCode"/>
+                        <button type="button" class="yzm_btn getcode" id="btn2" name="btn2">获取验证码</button>
+                        <div id="forcodeinfo" class="info"></div>
+                    </div>
+                </label>
+                <label>
+                    <span>新的密码</span>
+                    <span class="iepaww">请输入新的密码</span>
+                    <input name="password_new" id="forgetpwd" type="password" placeholder="请输入新的密码"/>
+                    <div id="fornewinfo" class="info"></div>
+                </label>
+                <label>
+                    <span>确认密码</span>
+                    <span class="iepaww">再次输入新的密码</span>
+                    <input name="password_old" id="password_old" type="password" placeholder="请输入密码"/>
+                    <div id="forg_pass_old" class="info"></div>
+                </label>
+                <div class="buttongroup2 clearfix">
+                    <a href="javascript:;" id="fongetbtn" class="sure-btn">重置密码</a>
+                    <a class="forget-cancel" id="forget-cancel">取消</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!--遮罩层-->
+<div class="mark">
+</div>
+
+
+<!--主体内容开始-->
+<div class="content aboutUscont">
+
+    <div class="aboutmainsize">
+
+        <div class="aboutcontbox biank">
+            <div class="aboutimg">
+                <img src="img/aboutimgpc.png"/>
+            </div>
+            <div class="aboutcont">
+                <div class="aboutcont_a aboutcontfist">
+                    <div class="media">
+                        <a href="javascript:void(0)">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="http://placehold.it/80x80"
+                                     alt="媒体对象" height="80px;">
+                            </div>
+                            <div class="media-body media-middle">
+                                <h4 class="media-heading">媒体标题</h4>
+                                <div>这是一些示例文本。这是一些示例文本。
+                                这是一些示例文本。这是一些示例文本。 </div>
+                            </div>
+                            <div class="media-right media-middle">2017-11-20</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="aboutcont_a aboutcontfist">
+                    <div class="media">
+                        <a href="javascript:void(0)">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="http://placehold.it/80x80"
+                                     alt="媒体对象" height="80px;">
+                            </div>
+                            <div class="media-body media-middle">
+                                <h4 class="media-heading">媒体标题</h4>
+                                <div>这是一些示例文本。这是一些示例文本。
+                                这是一些示例文本。这是一些示例文本。 </div>
+                            </div>
+                            <div class="media-right media-middle">2017-11-20</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="aboutcont_a aboutcontfist">
+                    <div class="media">
+                        <a href="javascript:void(0)">
+                            <div class="media-left media-middle">
+                                <img class="media-object" src="http://placehold.it/80x80"
+                                     alt="媒体对象" height="80px;">
+                            </div>
+                            <div class="media-body media-middle">
+                                <h4 class="media-heading">媒体标题</h4>
+                                <div>这是一些示例文本。这是一些示例文本。
+                                这是一些示例文本。这是一些示例文本。 </div>
+                            </div>
+                            <div class="media-right media-middle">2017-11-20</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--主体内容结束-->
+<!--PC页脚-->
+<div class="container-fluid move_hidden footer">
+    <div class="footer_left">
+        <p>Copyright © 2011-2018 &nbsp;&nbsp;</p>
+        <a href="http://www.miibeian.gov.cn" target="_blank">备案号：粤ICP备17153285号-1</a>
+        <span>
+            <!-- <a href="http://www.cnzz.com/stat/website.php?web_id=1259913388" target="_blank" title="站长统计"> -->
+                <img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic.gif">
+            <!-- </a> -->
+            </span>
+        <span>
+            <!-- <a class="reg-flag-a" href="http://wljg.gdgs.gov.cn/corpsrch.aspx?key=441900000512067"
+                 title="企业名称：东莞市找大状互联网科技有限公司  法定代表人：尚宏金  标识状态：已激活 粤工商备P191609003340" target="_blank"> -->
+            <img src="img/red_flag.png">
+            <!-- </a> -->
+      </span>
+    </div>
+    <div class="footer_right">
+        <div class="iphone_ioc">
+            <i></i>
+            400-654-9558
+        </div>
+    </div>
+</div>
+
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/login.js"></script>
+<script>
+    //鼠标移进，微信弹出
+    var weixin_log = document.querySelector(".weixin_log");
+    var hove_weixin = document.querySelector(".hove_weixin");
+    weixin_log.onmouseover = function () {
+        hove_weixin.style.display = "block";
+    }
+    //鼠标移出，微信隐藏
+    weixin_log.onmouseout = function () {
+        hove_weixin.style.display = "none";
+    }
+    //导航筋斗云
+    $('.navbar-nav>li').each(function () {
+        $(this).hover(function () {
+            $(this).css({"color":'#fff','background-color':'#2562CC'}).find('a').css({"color":"#fff"})
+        },function () {
+            $(this).css({'background-color':''})
+        })
+    });
+    function formHide(cancel) {
+        document.getElementById(cancel).onclick = function () {
+            $("#login_hide").css("display", "none");
+            mark.style.display = "none"
+        };
+    }
+    if(GetCookie('fullName')){
+        $("#suer_name").html(GetCookie('fullName'));
+    }
+    formHide("cancel");
+    formHide("res-can");
+    formHide("forget-cancel");
+
+    $(".media").on('click', function() {
+        window.location.href = 'newsDetail.html';
+    });
+</script>
+</body>
+</html>
