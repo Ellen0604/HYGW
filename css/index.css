@@ -728,8 +728,7 @@ input {
     display: none
 }
 .header-bottom ul {
-    width: 100%;
-    min-width: 1200px;
+    width: 1230px;
     height: 135px;
     display: flex;
     margin: 15px auto;
@@ -804,7 +803,7 @@ input {
     height: 100%;
     margin-top: 9px;
     min-height: 135px;
-    margin-right: 50px;
+    margin-right: 40px;
 }
 
 .middle-out {
@@ -855,11 +854,8 @@ a {
 .header-bottom ul li .bottom-text {
     display: inline-block;
     vertical-align: middle;
-    /*width: 172px;*/
     font-size: 12px;
-    margin-right: 15px;
-    padding-left: 15px;
-    padding-right: 35px;
+    padding-right: 15px;
     border-right: 1px solid #e8e8e8
 }
 
