@@ -113,8 +113,8 @@ body, html {
 }
 
 .aboutUslist ul {
-    width: 207px;
-    /*width: 310px;*/
+    /*width: 207px;*/
+    width: 309.5px;
     height: 37px;
     border: 1px solid #2562CC;
     margin: 0 auto;
@@ -129,9 +129,9 @@ body, html {
     padding: 9px 0;
     text-align: center
 }
-.aboutUslist li :hover{
+/*.aboutUslist li :hover{
     color: #2562CC;
-}
+}*/
 .aboutUslist .aboutli {
     background: #2562CC
 }
