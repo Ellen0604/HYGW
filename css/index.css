@@ -684,10 +684,12 @@ input {
 
 .tu1_center h2 {
     font-size: 80px;
-    font-weight: 500;
+    font-weight: bolder;
     color: #fff;
     margin-top: -14px;
-    font-family: "微软雅黑"
+    font-family: "微软雅黑";
+    letter-spacing:50px;
+    /*margin-top: 50px;*/
 }
 
 .tu1_center p {
@@ -714,9 +716,12 @@ input {
     font-family: "微软雅黑";
     position: fixed;
     left: 0;
+    right: 0;
+    bottom: 0;
     top: 0;
     z-index: 999;
-    margin-top: 66px;
+    /*margin-top: 66px;*/
+    margin: auto;
 }
 
 .adv-index-btn:hover {

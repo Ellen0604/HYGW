@@ -137,10 +137,11 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse navbar-example" id="navbar">
 			<ul class="nav navbar-nav font-color">
-				<li><a href="#index">首页<span class="sr-only">(current)</span></a></li>
-				<li class="active"><a href="#fuwu">寰宇荣誉</a></li>
-				<li><a href="#tuandui">寰宇团队</a></li>
+				<li class="active"><a href="#index">首页<span class="sr-only">(current)</span></a></li>
+				<!-- <li><a href="#fuwu">寰宇荣誉</a></li> -->
+				<li><a href="#td">寰宇团队</a></li>
 				<li><a href="#kefu">寰宇客户</a></li>
+				<li><a href="service.html">寰宇服务</a></li>
 				<li><a href="news.html">寰宇资讯</a></li>
 				<li><a href="aboutUs.html">关于寰宇</a></li>
 			</ul>
@@ -295,10 +296,10 @@
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<div class="index_bg_height"
-				 style="width: 100%;height: 825px;position:relative;background: url('img/bg1.jpg') no-repeat top/cover"></div>
+				 style="width: 100%;height: 825px;position:relative;background: url('img/bg1.jpg') no-repeat center/cover"></div>
 			<div class="tu1_center">
 				<h2>寰宇集团</h2>
-				<p>中国一站式企业综合服务商</p>
+				<!-- <p>中国一站式企业综合服务商</p> -->
 			</div>
 			<!-- <div class="tu1_center">
 				<h2>xxxx</h2>
@@ -307,11 +308,11 @@
 		</div>
 		<div class="swiper-slide">
 			<div class="index_bg_height"
-				 style="width: 100%;height: 825px;position:relative;background: url('img/banner2.jpg') no-repeat top/cover"></div>
+				 style="width: 100%;height: 825px;position:relative;background: url('img/banner2.jpg') no-repeat center/cover"></div>
 		</div>
 		<div class="swiper-slide">
 			<div class="index_bg_height"
-				 style="width: 100%;height: 825px;position:relative;background: url('img/banner3.jpg') no-repeat top/cover"></div>
+				 style="width: 100%;height: 825px;position:relative;background: url('img/banner3.jpg') no-repeat center/cover"></div>
 		</div>
 	</div>
 </div>
@@ -322,7 +323,7 @@
 		<div>
 			<ul>
 				<li class="middle-out lzmk">
-					<a href="javascript:void(0)">
+					<a href="service.html#zscq">
 						<span></span>
 						<div class="bottom-text">
 							<p>知识产权</p>
@@ -330,7 +331,7 @@
 					</a>
 				</li>
 				<li class="middle-out lzmk">
-					<a href="javascript:void(0)">
+					<a href="service.html#gscs">
 						<span></span>
 						<div class="bottom-text">
 							<p>工商财税</p>
@@ -338,7 +339,7 @@
 					</a>
 				</li>
 				<li class="middle-out lzmk">
-					<a href="javascript:void(0)">
+					<a href="service.html#wlkj">
 						<span></span>
 						<div class="bottom-text">
 							<p>网络科技</p>
@@ -346,7 +347,7 @@
 					</a>
 				</li>
 				<li class="middle-out lzmk">
-					<a href="javascript:void(0)">
+					<a href="service.html#rzzx">
 						<span></span>
 						<div class="bottom-text">
 							<p>认证资询</p>
@@ -354,7 +355,7 @@
 					</a>
 				</li>
 				<li class="middle-out lzmk">
-					<a href="javascript:void(0)">
+					<a href="service.html#flfw">
 						<span></span>
 						<div class="bottom-text">
 							<p>法律服务</p>
@@ -362,7 +363,7 @@
 					</a>
 				</li>
 				<li class="middle-out lzmk">
-					<a href="javascript:void(0)">
+					<a href="service.html#jyzx">
 						<span></span>
 						<div class="bottom-text">
 							<p>教育资询</p>
@@ -490,7 +491,7 @@
 </div>
 
 <!--PC首页图片3-->
-<div class="container-fluid move_hidden tu1">
+<div class="container-fluid move_hidden tu1" id="td">
 	<div class="shou_tu3"></div>
 </div>
 
@@ -627,7 +628,7 @@
 				</div>
 			  </div>
 			  <div class="swiper-slide">
-				<img class="slide-image" src="img/gongpai/7.JPG" alt="">
+				<img class="slide-image" src="img/gongpai/7.jpg" alt="">
 				<div class="slide-text">
 					<p>7</p>
 					<p>XXXXXXXXXXX</p>
@@ -932,51 +933,54 @@
 	$('.index_bg_height').height($(window).innerHeight() - 127);
 	$(function () {
 		// 广告碰壁
-		function advertising(){
-			//获取元素
-			var $inner = $("#adv_index_btn");
-			function run(){
-				var H = $(window).height()-66;
-				var W = $(window).width();
-				//垂直方向移动的速度
-				var vY = 1;
-				//水平方向移动的速度
-				var vX = 1;
+		// function advertising(){
+		// 	//获取元素
+		// 	var $inner = $("#adv_index_btn");
+		// 	function run(){
+		// 		var H = $(window).height()-66;
+		// 		var W = $(window).width();
+		// 		//垂直方向移动的速度
+		// 		var vY = 1;
+		// 		//水平方向移动的速度
+		// 		var vX = 1;
 
-				//inner的垂直方向的移动值
-				var innerT = 0;
-				//inner的水平方向的移动值
-				var innerL = 0;
-				return setInterval(function(){
-					if (innerT <0 || innerT + $inner.outerHeight() > H) {
-						vY = -vY;
-					}
-					if (innerL <0 || innerL + $inner.outerWidth() > W) {
-						vX = -vX;
-					}
-					innerT+=vY;
-					innerL+=vX;
-					// console.log(innerT,innerL)
-					$inner.css({
-						"top": innerT + "px",
-						"left": innerL + "px"
-					});
-				},5);
-			}
-			var timer = run();
+		// 		//inner的垂直方向的移动值
+		// 		var innerT = 0;
+		// 		//inner的水平方向的移动值
+		// 		var innerL = 0;
+		// 		return setInterval(function(){
+		// 			if (innerT <0 || innerT + $inner.outerHeight() > H) {
+		// 				vY = -vY;
+		// 			}
+		// 			if (innerL <0 || innerL + $inner.outerWidth() > W) {
+		// 				vX = -vX;
+		// 			}
+		// 			innerT+=vY;
+		// 			innerL+=vX;
+		// 			// console.log(innerT,innerL)
+		// 			$inner.css({
+		// 				"top": innerT + "px",
+		// 				"left": innerL + "px"
+		// 			});
+		// 		},5);
+		// 	}
+		// 	var timer = run();
 
-			$inner.hover(function() {
-				window.clearInterval(timer);
-			}, function() {
-				timer = run();
-			});
-			$(window).resize(function(){
-				$('.index_bg_height').height($(window).innerHeight() - 127);
-				window.clearInterval(timer);
-				timer = run();
-			})
-		}
-		advertising();
+		// 	$inner.hover(function() {
+		// 		window.clearInterval(timer);
+		// 	}, function() {
+		// 		timer = run();
+		// 	});
+		// 	$(window).resize(function(){
+		// 		$('.index_bg_height').height($(window).innerHeight() - 127);
+		// 		window.clearInterval(timer);
+		// 		timer = run();
+		// 	})
+		// }
+		// advertising();
+		$(window).resize(function(){
+			$('.index_bg_height').height($(window).innerHeight() - 127);
+		})
 
 		// 返回顶部
 		$(".toHeader").click(function () {

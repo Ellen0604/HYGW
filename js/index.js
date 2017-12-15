@@ -2,6 +2,7 @@
 $(document).ready(function () {
     var topMain = 50;
     var topMain2 = 100;
+    $(".nav_bianse").css("background-color", "rgba(0%, 0%, 0%, 0.5)")
     $(window).scroll(function () {
         if ($(window).scrollTop() > topMain) {
             $(".nav_bianse").css("background-color", "rgba(0%, 0%, 0%, 0.8)")
@@ -9,7 +10,7 @@ $(document).ready(function () {
         if ($(window).scrollTop() > topMain2) {
             $(".nav_bianse").css("background-color", "rgba(0%, 0%, 0%, 0.5)")
         } else {
-            $(".nav_bianse").css("background-color", "rgba(0%, 0%, 0%, 0.0)")
+            $(".nav_bianse").css("background-color", "rgba(0%, 0%, 0%, 0.5)")
         }
     })
 });
