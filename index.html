@@ -1023,14 +1023,24 @@
 				'-webkit-transform':'scale(2)',
 				'z-index':998
 			}).find(".slide-text").show();
-			$(".swiper-container").css({'overflow': 'visible'});
+			$(".swiper-container").css({
+				'height':'600px',
+				'margin-top':'-150px',
+				'padding-top':'150px'
+			});
+			swiper.update();
 		},function(){
-		   $(this).css({
+			$(this).css({
 				'transform':'scale(1)',
 				'-webkit-transform':'scale(1)',
-				'z-index':"1"
+				'z-index':1
 			}).find(".slide-text").hide();
-		   $(".swiper-container").css({'overflow': 'hidden'});
+			$(".swiper-container").css({
+			   	'height':'auto',
+			   	'margin-top':'0',
+			   	'padding-top':'0'
+			});
+			swiper.update();
 		})
 	})
 	$('.toHeader').hide();
