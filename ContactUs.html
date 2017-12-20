@@ -136,56 +136,60 @@
             <div class="login-text text-style" id="login">
                 <label class="log_top">
                     <span>手机号</span>
-                    <input name="userphone" maxlength="11" id="userphone" type="text" placeholder="请输入手机号码"/>
+                    <input name="userphone" maxlength="11" id="userphone" type="text" placeholder="请输入您的手机号码"/>
                     <div id="userinfo" class="info"></div>
                 </label>
                 <label>
-                    <span>密码</span>
+                    <span>密&nbsp;&nbsp;&nbsp;码</span>
                     <span class="iepaww">请填写您的登录密码</span>
-                    <input name="login_pass" id="password" type="password" placeholder="请输入密码"/>
+                    <input name="login_pass" id="password" type="password" placeholder="请输入6-16位数字或英文密码"/>
                     <div id="pwdinfo" class="info"></div>
                 </label>
                 <div class="buttongroup1 clearfix">
-                    <a href="javascript:;" id="loginForm2" class="sure-btn">确认登录</a>
-                    <a href="javascript:;" id="cancel" class="cancel">取消</a>
+                    <a id="loginForm2" class="sure-btn">确认登录</a>
+                    <a id="cancel" class="cancel">取消</a>
                     <a href="#" class="forget-btn" id="forget-btn">忘记密码？</a>
                 </div>
             </div>
         </form>
         <!--登录内容结束-->
         <!--注册内容开始-->
-        <!--注册内容开始-->
         <form class="regform" id="regForm">
-            <div class="login-text text-style" style="display: none;" id="zuce">
+            <div class="zuce-text text-style" style="display: none;" id="zuce">
                 <label>
-                    <span>手机号</span><input id="regtel" maxlength="11" class="phone" name="reg_iphone" type="text"
-                                           placeholder="请输入您的手机号"/>
+                    <span>公司名称</span><input placeholder="请输您的公司名称"/>
+                    <div class="info"></div>
+                </label>
+                <label>
+                    <span>手机号</span><input id="regtel" class="phone" name="reg_iphone" maxlength="11" type="tel" placeholder="请输您的入手机号码"/>
                     <div id="regtelinfo" class="info zhuzhi"></div>
                 </label>
                 <label class="yzm">
                     <span>验证码</span>
                     <div class="yzmgroup clearfix">
-                        <input type="text" id="regverifyCode" name="yan_zheng" class="yzm_input" placeholder="请输入验证码"/>
+                        <input type="text" id="regverifyCode" maxlength="6" name="yan_zheng" class="yzm_input" placeholder="请输入验证码"/>
                         <button type="button" class="yzm_btn getcode" id="btn1" name="btn1">获取验证码</button>
                         <div id="regcodeinfo" class="info"></div>
                     </div>
                 </label>
                 <label>
-                    <span>密码</span>
+                    <span>设置密码</span>
                     <span class="iepaww">请填写您的登录密码</span>
-                    <input name="reg_password1" id="regpwd" type="password" placeholder="请至少输入6位密码"/>
+                    <input name="reg_password1" id="regpwd" maxlength="16" type="password"
+                           placeholder="请输入6-16位数字或英文新密码"/>
                     <div id="regpwdinfo" class="info"></div>
                 </label>
                 <label>
-                    <span>密码</span>
-                    <span class="iepaww">请再次确认你的密码</span>
-                    <input name="reg_password2" id="regpwd2" type="password" placeholder="请输入6-16位数字或英文新密码"/>
+                    <span>确认密码</span>
+                    <span class="iepaww">请再次确认您的密码</span>
+                    <input name="reg_password2" id="regpwd2" maxlength="16" type="password"
+                           placeholder="请输入6-16位数字或英文新密码"/>
                     <div id="regpwdinfo2" class="info"></div>
                 </label>
 
                 <div class="buttongroup clearfix">
-                    <input class="sure-btn" type="button" value="确认注册" id="confirmreg">
-                    <a class="sure-cancel" id="res-can" >取消</a>
+                    <button class="sure-btn" id="confirmreg">确定注册</button>
+                    <a class="sure-cancel" id="res-can">取消</a>
                 </div>
             </div>
         </form>
@@ -198,7 +202,8 @@
         <form class="forgetfrom" id="forgetfrom">
             <div class="text-style">
                 <label>
-                    <span>手机号</span><input id="forgettel" maxlength="11" name="forget_iphone" type="text" placeholder="请输入手机号码"/>
+                    <span>手机号</span><input id="forgettel" name="forget_iphone" type="tel" maxlength="11"
+                                           placeholder="请输入您的手机号码"/>
                     <div id="fortelinfo" class="info"></div>
                 </label>
                 <label class="yzm">
@@ -206,20 +211,20 @@
                     <div class="yzmgroup clearfix">
                         <input type="text" name="" id="forgetverifyCode" class="yzm_input" placeholder="请输入验证码"
                                name="forgetverifyCode"/>
-                        <button type="button" class="yzm_btn getcode" id="btn2" name="btn2">获取验证码</button>
+                        <button type="button" class="getcode2" id="btn2" name="btn2">获取验证码</button>
                         <div id="forcodeinfo" class="info"></div>
                     </div>
                 </label>
                 <label>
                     <span>新的密码</span>
                     <span class="iepaww">请输入新的密码</span>
-                    <input name="password_new" id="forgetpwd" type="password" placeholder="请输入密码"/>
+                    <input name="password_new" id="forgetpwd" type="password" placeholder="请输入6-16位数字或英文新密码"/>
                     <div id="fornewinfo" class="info"></div>
                 </label>
                 <label>
                     <span>确认密码</span>
                     <span class="iepaww">再次输入新的密码</span>
-                    <input name="password_old" id="password_old" type="password" placeholder="请输入密码"/>
+                    <input name="password_old" id="password_old" type="password" placeholder="请输入6-16位数字或英文新密码"/>
                     <div id="forg_pass_old" class="info"></div>
                 </label>
                 <div class="buttongroup2 clearfix">
