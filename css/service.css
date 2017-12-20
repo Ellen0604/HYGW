@@ -108,7 +108,7 @@ label {
     background: url("../img/alert_icon.png") no-repeat;
 }
 .alert_boxs .alt_top .alt_mess{
-    font-family: '微软雅黑';
+    font-family: '寰蒋闆呴粦';
     font-size: 20px;
     line-height: 30px;
 }
@@ -122,7 +122,7 @@ label {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     font-size: 14px;
     color: #fff;
     background-color: #e43b3f;
@@ -149,7 +149,7 @@ label {
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     font-size: 14px;
     color: #4d4d4d;
     background-color: #fff;
@@ -182,9 +182,8 @@ label {
     min-width: 910px
 }
 
-.huanyu_log {
-    margin-left: 10px;
-    width:150px;
+.zhaodazhuang_log {
+    margin-left: 10px
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -192,7 +191,7 @@ label {
     color: #fff;
     height: 66px;
     line-height: 40px;
-    font-family:"微软雅黑";
+    font-family:"寰蒋闆呴粦";
 }
 
 .navbar_img {
@@ -236,9 +235,7 @@ label {
     margin-top: 14px;
     padding: 0 18px;
     border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    background-color: #666;
-    border:1px solid #666;
+    border-bottom-right-radius: 5px
 }
 
 .zuce :focus {
@@ -248,7 +245,7 @@ label {
 .login {
     height: 30px;
     font-size: 12px;
-    background: #3F86D0;
+    background: #565662;
     color: #fff;
     border: 0;
     margin-right: 20px;
@@ -284,7 +281,7 @@ label {
     margin-top: 45px;
     line-height: 20px;
     font-size: 12px;
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     vertical-align: middle;
     color: #fff
 }
@@ -374,7 +371,7 @@ label {
     text-align: center;
     font-size: 14px;
     color: #333;
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     cursor: pointer;
 }
 
@@ -402,7 +399,7 @@ label {
     font-size: 12px;
     color: #333;
     font-weight: normal;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .text-style label {
@@ -432,7 +429,7 @@ input {
     color: #e43a3d;
     line-height: 30px;
     float: left;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 #loginForm2 {
@@ -484,9 +481,8 @@ input {
     margin-top: 22px;
     line-height: 40px;
     text-align: center;
-    /*background:  url(../img/config_btn.png) no-repeat center;*/
-    /*background-size: 100% 100%;*/
-    background-color: #2562cc;
+    background: url(../img/config_btn.png) no-repeat center;
+    background-size: 100% 100%;
     color: #fff;
     cursor: pointer;
     text-decoration: none;
@@ -549,7 +545,7 @@ input {
     font-size: 12px;
     color: #868686;
     line-height: 20px;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .text-style .yzm .yzm_btn {
@@ -564,7 +560,7 @@ input {
     text-align: center;
     background: #efefef;
     margin-left: 15px;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .getcode {
@@ -580,7 +576,7 @@ input {
     right: -3px;
     text-align: center;
     background: #efefef;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .getcode2 {
@@ -596,7 +592,7 @@ input {
     right: -6px;
     text-align: center;
     background: #efefef;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .forget p {
@@ -605,7 +601,7 @@ input {
     text-align: center;
     font-size: 14px;
     color: #333;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .login .forget p i {
@@ -650,7 +646,7 @@ input {
 
 .text-style button.sure-btn {
     padding: 5px 30px;
-    background: #2562cc;
+    background: #e03337;
     color: #fff;
     border: 0;
     border-radius: 3px
@@ -684,62 +680,52 @@ input {
 
 .tu1_center h2 {
     font-size: 80px;
-    font-weight: bolder;
+    font-weight: 500;
     color: #fff;
     margin-top: -14px;
-    font-family: "微软雅黑";
-    letter-spacing:50px;
-    /*margin-top: 50px;*/
+    font-family: "寰蒋闆呴粦"
 }
 
 .tu1_center p {
     color: #fff;
     font-size: 24px;
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     margin-bottom: 44px;
     letter-spacing: 1px
 }
 
-.adv-index-btn {
+.tu1_center a {
     display: block;
-    width: 300px;
-    height: 70px;
+    width: 480px;
     line-height: 70px;
     text-align: center;
     border: 0;
-    background: #3F86D0;
+    background: #e03337;
     border-radius: 10px;
-    box-shadow: 2px 6px 2px #314E8C;
+    box-shadow: 2px 6px 2px #8e1114;
     color: #fff;
     text-decoration: none;
+    margin: 0 auto;
     font-size: 20px;
-    font-family: "微软雅黑";
-    position: fixed;
-    left: 0;
-    right: 0;
-/*    bottom: 0;
-    top: 0;*/
-    z-index: 999;
-    /*margin-top: 66px;*/
-    margin: auto;
+    font-family: "寰蒋闆呴粦"
 }
 
-.adv-index-btn:hover {
-    background: #2562cc;
-    color: #fff;
+.tu1_center a:hover {
+    background: #de292e
 }
 
 .move_block {
     display: none
 }
-.header-bottom ul {
-    width: 1230px;
-    height: 135px;
-    display: flex;
-    margin: 15px auto;
-    justify-content: center
-}
+
 @media screen and (min-width: 920px) {
+    .header-bottom ul {
+        width: 1120px;
+        height: 135px;
+        display: flex;
+        margin: 15px auto;
+        justify-content: center
+    }
 
     .my-box {
         width: 420px;
@@ -759,7 +745,7 @@ input {
         width: 140px;
         height: 40px;
         font-size: 12px;
-        font-family: "微软雅黑";
+        font-family: "寰蒋闆呴粦";
         color: #fff
     }
 
@@ -786,7 +772,7 @@ input {
         border: 1px solid #dfdfe3;
         font-size: 12px;
         margin-left: 50px;
-        font-family: "微软雅黑"
+        font-family: "寰蒋闆呴粦"
     }
 
     .forget_style {
@@ -804,11 +790,10 @@ input {
 
 .header-bottom ul li {
     float: left;
-    /*width: 280px;*/
+    width: 280px;
     height: 100%;
     margin-top: 9px;
-    min-height: 135px;
-    margin-right: 40px;
+    min-height: 135px
 }
 
 .middle-out {
@@ -836,12 +821,10 @@ a {
     display: inline-block;
     vertical-align: middle;
     transition: all .5s ease-in-out;
-    /*background: url(../img/fuwu.png) no-repeat -808px 0*/
-    background: url(../img/fuwu2.png) no-repeat;
-    background-size: auto 80%;
+    background: url(../img/fuwu.png) no-repeat -808px 0
 }
 
-/*.header-bottom ul li.zsmk a > span {
+.header-bottom ul li.zsmk a > span {
     background-position: -567px 5px;
     width: 90px
 }
@@ -854,32 +837,35 @@ a {
 .header-bottom ul li.qymk a > span {
     background-position: -452px 0;
     width: 92px
-}*/
+}
 
 .header-bottom ul li .bottom-text {
     display: inline-block;
     vertical-align: middle;
+    width: 172px;
     font-size: 12px;
-    padding-right: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 35px;
     border-right: 1px solid #e8e8e8
 }
 
 .header-bottom ul li .bottom-text p {
     font-size: 16px;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .header-bottom ul li .bottom-text span {
     font-size: 12px;
     color: #808080;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .shou_tu2 {
     margin-top: -2%;
     width: 100%;
     height: 440px;
-    background: url(../img/bg3.jpg) no-repeat center 0;
+    background: url(../img/bg2.png) no-repeat center 0;
     background-attachment: fixed
 }
 
@@ -895,20 +881,12 @@ a {
 
 .second-text h3 {
     font-size: 36px;
-    color: #2562cc;
+    color: #e03337;
     text-align: center;
     font-weight: normal;
     margin-bottom: 55px;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
-/*.kh-title h3 {
-    font-size: 36px;
-    color: #2562cc;
-    text-align: center;
-    font-weight: normal;
-    margin-top: 55px;
-    font-family: "微软雅黑"
-}*/
 
 #pro_maxbox > p > span {
     font-family: 'Arail Regular';
@@ -1015,7 +993,7 @@ a {
 .laozi_first {
     margin-top: 9px !important
 }
-/*鼠标没移入的效果*/
+/*榧犳爣娌＄Щ鍏ョ殑鏁堟灉*/
 .second-text .w1200 > ul > li .zhishi span {
     background-position: -54px -131px;
     width: 32px;
@@ -1054,7 +1032,7 @@ a {
     font-size: 20px !important;
     font-weight: bold;
     color: #1a1a1a;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .second-text .w1200 > ul > li .second-top p {
@@ -1064,7 +1042,7 @@ a {
 
 .second-text .w1200 > ul > li.current .second-top p {
     color: #fff !important;
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     font-size: 12px
 }
 .second-text .w1200>ul>li.current .second-top .move_block{
@@ -1092,7 +1070,7 @@ a {
     width: 100%;
     margin-top: 30px;
     font-size: 24px;
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     color: #1a1a1a
 }
 
@@ -1106,7 +1084,7 @@ a {
     font-size: 12px;
     text-align: center;
     color: #4d4d4d;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .second-text .w1200 > ul > li.current .hide {
@@ -1138,13 +1116,13 @@ a {
     font-weight: 600;
     font-size: 18px;
     color: #1a1a1a;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .second-text .w1200 > ul > li .second-middle span {
     font-size: 14px;
     color: #4d4d4d;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .second-text .w1200 > ul > li .second-bottom {
@@ -1158,17 +1136,16 @@ a {
     margin-top: 5px;
     font-size: 12px;
     color: #1a1a1a;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .shou_tu3 {
     margin-top: -2%;
     width: 100%;
     height: 440px;
-    background: url(../img/bg2.jpg) center no-repeat;
-   /* background-position-x: 100%;
-    background-position-y: -117.308px;*/
-    background-size: 100% auto;
+    background: url(../img/bg3.png) no-repeat;
+    background-position-x: 100%;
+    background-position-y: -117.308px;
     background-attachment: fixed
 }
 
@@ -1210,7 +1187,7 @@ a {
     display: inline-block;
     font-weight: normal;
     color: #e03337;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .tuandui_left p {
@@ -1236,7 +1213,7 @@ a {
 .tuandui_p > span {
     font-size: 16px;
     color: #1a1a1a;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .tuandui_left h3 {
@@ -1290,7 +1267,7 @@ a {
 
 .shou_tu4 {
     display: inline-block;
-    background: url(../img/bg4.jpg) no-repeat center 0;
+    background: url(../img/bg4.png) no-repeat center 0;
     width: 100%;
     height: 440px;
     background-attachment: fixed
@@ -1299,7 +1276,7 @@ a {
 .beijing {
     width: 100%;
     height: 500px;
-    /*background: url(../img/fourth-text.png) no-repeat;*/
+    background: url(../img/fourth-text.png) no-repeat;
     position: relative
 }
 
@@ -1307,7 +1284,7 @@ a {
     width: 43%;
     position: absolute;
     top: 75px;
-    right: 0
+    left: 15%
 }
 
 @media screen and (max-width: 1492px) {
@@ -1315,20 +1292,21 @@ a {
         width: 43%;
         position: absolute;
         top: 75px;
-        right: 0
+        left: 15%
     }
 
     .kuhu_right {
         position: absolute;
-        left: 0 !important;
+        right: 0 !important;
         top: 50px;
         width: 607px;
         height: 415px;
-        padding: 11px 180px 70px;
-        background: url(../img/phone.png) center no-repeat;
-        background-size: 70% 100%;
+        padding: 30px 180px 70px 145px;
+        background-image: url(../img/phone.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         text-align: center;
-        /*color: #fff*/
+        color: #fff
     }
 }
 
@@ -1337,36 +1315,37 @@ a {
         width: 47%;
         position: absolute;
         top: 75px;
-        right: 0
+        left: 6%
     }
 
     .kuhu_right {
         position: absolute;
-        left: 4%;
+        right: 4%;
         top: 50px;
         width: 607px;
         height: 415px;
-        padding: 11px 180px 70px;
-        background: url(../img/phone.png) center no-repeat;
-        background-size: 70% 100%;
+        padding: 30px 180px 70px 145px;
+        background-image: url(../img/phone.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
         text-align: center;
-        /*color: #fff*/
+        color: #fff
     }
 }
 
 .kuhu_left h3 {
     font-size: 80px;
     font-weight: normal;
-    color: #2562cc;
+    color: #e03337;
     line-height: 1;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .kuhu_left p {
     font-size: 22px;
     font-weight: normal;
     color: #4d4d4d;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .fourth-animate {
@@ -1386,13 +1365,12 @@ a {
     color: #4d4d4d;
     font-size: 12px;
     box-sizing: border-box;
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     margin-bottom: 10px
 }
 
 .fourth-logo span.fourth-first {
     background: url(../img/1.png) no-repeat 0 0;
-    background-size: auto 100%;
     display: inline-block;
     width: 93px;
     height: 93px
@@ -1400,7 +1378,6 @@ a {
 
 .fourth-logo span.fourth-second {
     background: url(../img/2.png) no-repeat 0 0;
-    background-size: auto 100%;
     display: inline-block;
     width: 93px;
     height: 93px
@@ -1408,7 +1385,6 @@ a {
 
 .fourth-logo span.fourth-third {
     background: url(../img/3.png) no-repeat 0 0;
-    background-size: auto 100%;
     display: inline-block;
     width: 93px;
     height: 93px
@@ -1416,7 +1392,6 @@ a {
 
 .fourth-logo span.fourth-fourth {
     background: url(../img/4.png) no-repeat 0 0;
-    background-size: auto 100%;
     display: inline-block;
     width: 93px;
     height: 93px
@@ -1424,21 +1399,21 @@ a {
 
 .kuhu_right {
     position: absolute;
-    left: 14%;
+    right: 14%;
     top: 50px;
     width: 607px;
     height: 415px;
-    padding: 11px 180px 70px;
-    background: url(../img/phone.png) center no-repeat;
-    background-size: 70% 100%;
+    padding: 30px 180px 70px 145px;
+    background-image: url(../img/phone.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     text-align: center;
-    /*color: #fff*/
+    color: #fff
 }
 
 .kuhu_right h3 {
     margin-top: 5px;
-    margin-bottom: 60px;
-    font-size: 18px;
+    font-size: 18px
 }
 
 .kuhu_right li {
@@ -1448,9 +1423,10 @@ a {
 
 .footer_bg {
     width: 100%;
+    height: 200px;
     padding-left: 0;
     padding-right: 0;
-    background: url(../img/partner-bg2.jpg)
+    background: url(../img/customers_bot_bg.png)
 }
 
 .footer_bg p {
@@ -1459,7 +1435,7 @@ a {
     padding-top: 45px;
     padding-bottom: 34px;
     text-align: center;
-    font-family: "微软雅黑"
+    font-family: "寰蒋闆呴粦"
 }
 
 .footer_bg a {
@@ -1512,7 +1488,7 @@ a {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background-image: url(../img/ico_phone1.png);
+    background-image: url(../img/common/ico_phone1.png);
     background-repeat: no-repeat;
     vertical-align: middle
 }
@@ -1554,7 +1530,7 @@ a {
     height: 70px;
     padding: 19px;
     padding-top: 10px;
-    background: #6696DE;
+    background: #bd3339;
     opacity: 0.9;
     margin-bottom: 10px;
     cursor: pointer;
@@ -1587,7 +1563,7 @@ a {
 }
 
 #fixed_index .online{
-    font-family: "微软雅黑";
+    font-family: "寰蒋闆呴粦";
     font-size:12px;
     color:#fff;
     width: 100px;
